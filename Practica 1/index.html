@@ -8,30 +8,44 @@
     <link rel="stylesheet" href="./css/estilo.css">
 </head>
 <body>
-    <header>
-        <h1 class="titulo">Mini Analizador Lexico</h1>
-        <p class="info">Por favor ingrese una palabra en el cuadro de texto, y haga clic en el boton, o presione enter para analizar el texto ingresado.</p>
-    </header>   
-    <div >
-        <section class="textos">
 
-            <button onclick="analizar()" id="btnAnalizar">Analizar</button>
-            <input type="text" id="texto"  onkeypress="enter(event);space(event);">
-  
+<div class="contenedorPrincipal">
+
+    <header class="" >   
+        <section >
+        <h1 class="titulo">Mini Analizador Lexico</h1>
         </section>
-    </div>
-    
-    <section class="reporte">
+    </header>
+
+        <section >
+            <article class="contenedor">
+                <p class="info">Por favor ingrese una palabra en el cuadro de texto, y haga clic en el boton, o presione enter para analizar el texto ingresado.</p>
+                <h2 class="titulo2">Analizar Palabra</h2>
+                <div class="analisis">
+                    <button onclick="analizar()" id="btnAnalizar">Analizar</button>
+                    <input type="text" id="texto"  onkeypress="enter(event);space(event);">
+                    <button onclick="location.reload()" id="btnAnalizar">Nuevo Analisis</button>
+                </div>
+            </article>
+        </section>
+
+    <div class="contenedor">
+        <section class="reporte">
       
-        <p>Correctas:</p>
-        <ul id="correctas">
-            <div id="listadoCorrectas"></div>
-        </ul>
-        <p>Errores:</p>
-        <ul id="incorrectas">
-            <div id="listadoIncorrectas"> </div>
-        </ul>
+            <p class="correctas">Correctas:</p>
+            <ul class="correctas" id="correctas">
+                <div id="listadoCorrectas"></div>
+            </ul>
+            <p class="incorrectas">Errores:</p>
+            <ul class="incorrectas" id="incorrectas">
+                <div id="listadoIncorrectas"> </div>
+            </ul>
     </section>
+
+    </div>
+
+</div>
     <script type="text/javascript" src="./js/analisis.js"></script>
+  
 </body>
 </html>

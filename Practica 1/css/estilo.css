@@ -1,36 +1,66 @@
 .titulo{
     color:tomato;
-    margin: 0 450px;
-    padding: 10px;
+    margin: auto;
+    text-align: center;
+
     
 }
+.titulo2{
+    color:tomato;
+    margin: 20px;
+    text-align: center;
+
+    
+}
+
+#btnAnalizar{
+    padding: 5px;
+    margin: 0 20px;
+}
+
+.analisis{
+    color:tomato;
+    margin: auto;
+    text-align: center;
+    
+}
+
 .info{
- 
     color: brown;
-    padding: 30px ;
-    width: 53%;
     display: inline-block;
     text-align: center;
-    margin: 0 300px;
+   margin: 10px 120px;
 }
-.textos{
-    background: grey;
-    padding-bottom: 30px;
-    padding-left: 0;
-    padding-right: 30px;
-    padding-top: 30px;
-    display: block;
-}
+
 #correctas{
     color:blue;
     padding: 10px;
-    margin: 30px;
-}
+    margin: 10px 25px;
+
+}   
 #incorrectas{
     color: red;
     padding: 10px;
-    margin: 30px;
+    margin: 10px 25px;
 }
 .reporte{
     display: flex;
 }
+
+.contenedor{
+    width: 80%;
+    padding: 10px;
+    display: block;
+    margin: auto;
+    border: 1px solid #f0dab1;
+  }
+  
+  
+.contenedorPrincipal{
+
+    padding: 10px;
+    display: block;
+    margin: auto;
+    border: 1px solid #1ca9ff;
+    background-color: #f6edcf;
+  }

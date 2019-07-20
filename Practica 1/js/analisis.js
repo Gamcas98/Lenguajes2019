@@ -10,7 +10,7 @@ function analizar(){
     
     bandera=false;//reinicar la varible cada ves que analizamos
     
-    for(var i=0; i<textoEntrada.value.length; i++){//recorremos la longitud de la palabra ingresada
+    for(var i=0; i<textoEntrada.value.length; i++){//vamos a recorrer caracter por caracter la palabra
         ascii=textoEntrada.value.charCodeAt(i);//convertimos a codigo ascii el caracter analizado
         tipo=comprobarTipo(ascii);//comprobamos el token y se lo asignamos a tipo
         if(tipo==="error"){//cuando lleguemos a un estado de error
@@ -33,7 +33,7 @@ function analizar(){
     textoEntrada.focus();
 }
 
-
+//funcion que detecta el espacio para avisarle al compa que no lo haga
 function space(event){
  
     if (event.keyCode == 32 || event.which == 32){
