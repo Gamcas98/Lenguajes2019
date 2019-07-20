@@ -9,17 +9,18 @@
 </head>
 <body>
     <header>
-        <h1 class="titulo">Primera Practica de Lenguajes</h1>
-        <p class="info">Por favor ingrese una palabra en el cuadro de texto, y haga clic en el boton para identificar el texto ingresado.</p>
+        <h1 class="titulo">Mini Analizador Lexico</h1>
+        <p class="info">Por favor ingrese una palabra en el cuadro de texto, y haga clic en el boton, o presione enter para analizar el texto ingresado.</p>
     </header>   
-
-    <section class="textos">
+    <div >
+        <section class="textos">
 
             <button onclick="analizar()" id="btnAnalizar">Analizar</button>
-            <input type="text" id="texto">
+            <input type="text" id="texto"  onkeypress="enter(event);space(event);">
   
-    </section>
-
+        </section>
+    </div>
+    
     <section class="reporte">
       
         <p>Correctas:</p>

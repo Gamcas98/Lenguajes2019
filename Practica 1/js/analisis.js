@@ -7,7 +7,7 @@ var tipo;//guarda el tipo de token de la palabra ingresada
 var bandera=false;//nos sirven para llegar a un estado de error
 
 function analizar(){
-
+    
     bandera=false;//reinicar la varible cada ves que analizamos
     
     for(var i=0; i<textoEntrada.value.length; i++){//recorremos la longitud de la palabra ingresada
@@ -29,9 +29,29 @@ function analizar(){
     }else{//si la bandera esta en estado de error (false)
     imprimir("incorrectas","Error");
     }  
+    textoEntrada.value="";
+    textoEntrada.focus();
 }
 
 
+function space(event){
+ 
+    if (event.keyCode == 32 || event.which == 32){
+        textoEntrada.value="";
+        alert('no lo haga compa');  
+
+    }
+    
+}
+
+//funcion para analizar la palabra al presionar enter
+function enter(event){
+    if (event.keyCode == 13 || event.which == 13){
+        analizar();
+    }
+    console.log(textoEntrada);
+
+}
 function imprimir(tabla,tipo){//metodo para llenar las listas de las palabras analizadas
     document.getElementById(tabla).innerHTML =document.getElementById(tabla).innerHTML + "<li class=\"list-group-item\">"+textoEntrada.value+"-->"+tipo+"</li>";
 }
