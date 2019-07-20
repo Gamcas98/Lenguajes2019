@@ -13,7 +13,7 @@
 
     <header  >   
         <section >
-        <h1 class="titulo"><MARQUEE BEHAVIOR=ALTERNATE  SCROLLAMOUNT=15>Mini Analizador Lexico</h1></MARQUEE>
+        <h1 class="titulo"><MARQUEE BEHAVIOR=ALTERNATE  SCROLLAMOUNT=12>Mini Analizador Lexico</h1></MARQUEE>
         </section>
     </header>
 
@@ -24,28 +24,28 @@
                 <div class="analisis">
                     <button onclick="analizar()" id="btnAnalizar">Analizar</button>
                     <input type="text" id="texto"  onkeypress="enter(event);space(event);">
-                    <button onclick="location.reload()" id="btnAnalizar">Nuevo Analisis</button>
+                    <button onclick="location.reload()" id="btnVAnalizar">Nuevo Analisis</button>
                 </div>
             </article>
         </section>
 
     <div class="contenedor">
         <section class="reporte">
-      
-            <p class="correctas">Correctas:</p>
-            <ul class="correctas" id="correctas">
-                <div id="listadoCorrectas"></div>
-            </ul>
-            <p class="incorrectas">Errores:</p>
-            <ul class="incorrectas" id="incorrectas">
-                <div id="listadoIncorrectas"> </div>
-            </ul>
+            <div class="contenedor2">
+                <p class="correctas">Correctas:</p>
+                <ul class="correctas" id="correctas">
+                    <div id="listadoCorrectas"></div>
+                </ul>
+                <p class="incorrectas">Errores:</p>
+                <ul class="incorrectas" id="incorrectas">
+                    <div id="listadoIncorrectas"> </div>
+                </ul>
+        </div>
     </section>
 
     </div>
 
 </div>
     <script type="text/javascript" src="./js/analisis.js"></script>
-  
 </body>
 </html>

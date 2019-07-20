@@ -14,10 +14,15 @@
     
 }
 
-#btnAnalizar{
-    padding: 5px;
-    margin: 0 20px;
+#btnVAnalizar{
+    padding: 10px;
+    margin: 0 40px;
 }
+
+#btnAnalizar{
+    padding: 10px;
+}
+
 
 .analisis{
     color:tomato;
@@ -53,15 +58,23 @@
     padding: 10px;
     display: block;
     margin: auto;
-    border: 1px solid #f6f6f6;
+    border: 1px solid #f2eee0;
+
+  }
+
+  .contenedor2{
+    margin: 0 100px;
+    padding: 10px;
+    margin: auto;
+    display: flex;
   }
   
   
 .contenedorPrincipal{
 
     padding: 10px;
+    margin: 50px;
     display: block;
-    margin: auto;
     border: 1px solid #1ca9ff;
     background-color: #dedede;
   }
