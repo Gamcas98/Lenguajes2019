@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Mini Analizador Lexico</title>
+    <link rel="stylesheet" href="./css/estilo.css">
+</head>
+<body>
+    <header>
+        <h1 class="titulo">Primera Practica de Lenguajes</h1>
+        <p class="info">Por favor ingrese una palabra en el cuadro de texto, y haga clic en el boton para identificar el texto ingresado.</p>
+    </header>   
+
+    <section class="textos">
+
+            <button onclick="analizar()" id="btnAnalizar">Analizar</button>
+            <input type="text" id="texto">
+  
+    </section>
+
+    <section class="reporte">
+      
+        <p>Correctas:</p>
+        <ul id="correctas">
+            <div id="listadoCorrectas"></div>
+        </ul>
+        <p>Errores:</p>
+        <ul id="incorrectas">
+            <div id="listadoIncorrectas"> </div>
+        </ul>
+    </section>
+    <script type="text/javascript" src="./js/analisis.js"></script>
+</body>
+</html>

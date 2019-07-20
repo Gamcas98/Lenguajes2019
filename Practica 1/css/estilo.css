@@ -1,0 +1,36 @@
+.titulo{
+    color:tomato;
+    margin: 0 450px;
+    padding: 10px;
+    
+}
+.info{
+ 
+    color: brown;
+    padding: 30px ;
+    width: 53%;
+    display: inline-block;
+    text-align: center;
+    margin: 0 300px;
+}
+.textos{
+    background: grey;
+    padding-bottom: 30px;
+    padding-left: 0;
+    padding-right: 30px;
+    padding-top: 30px;
+    display: block;
+}
+#correctas{
+    color:blue;
+    padding: 10px;
+    margin: 30px;
+}
+#incorrectas{
+    color: red;
+    padding: 10px;
+    margin: 30px;
+}
+.reporte{
+    display: flex;
+}
