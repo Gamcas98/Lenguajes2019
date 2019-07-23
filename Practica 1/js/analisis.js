@@ -49,6 +49,18 @@ function space(event){
     
 }
 
+//funcion para confirmar si se recargara la pagina para un analisis en limpio
+function preguntar(){
+    var preg = confirm("Se Perderan todas las palabras analizadas!, Estas Seguro?");
+    
+    if (preg == true) {
+       location.reload();
+       alert("La recargo el compa");
+    } else {
+       alert("No la recargo el compa");
+    }
+}
+
 //funcion para analizar la palabra al presionar enter
 function enter(event){
     if (!textoEntrada.value==""){
