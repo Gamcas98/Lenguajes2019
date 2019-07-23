@@ -10,14 +10,16 @@ function analizar(){
     
     bandera=false;//reinicar la varible cada ves que analizamos
     if(!textoEntrada.value==""){
+       
         for(var i=0; i<textoEntrada.value.length; i++){//vamos a recorrer caracter por caracter la palabra
+           
             ascii=textoEntrada.value.charCodeAt(i);//convertimos a codigo ascii el caracter analizado
             tipo=comprobarTipo(ascii);//comprobamos el token y se lo asignamos a tipo
+            
             if(tipo==="error"){//cuando lleguemos a un estado de error
-            bandera=true//usamos nuestra bandera
+                bandera=true//usamos nuestra bandera
             }
         }
-    
 
         if(!bandera){// la bandera se encuentre fuera del estado de error (true)
             if(tipo==="letra" && bandera==false){//si tipo nos devolvio token letra
@@ -30,10 +32,10 @@ function analizar(){
         }else{//si la bandera esta en estado de error (false)
         imprimir("incorrectas","Error");
         }  
+
         textoEntrada.value="";
-        textoEntrada.focus();
-        console.log(textoEntrada.value);
-}
+        textoEntrada.focus();      
+    }
 }
 
 //funcion que detecta el espacio para avisarle al compa que no lo haga
@@ -41,12 +43,11 @@ function space(event){
  
     if (event.keyCode == 32 || event.which == 32){
         textoEntrada.value="";
-        confirm('no lo haga compa');  
+        alert('no lo haga compa');  
         textoEntrada.value.trim();
     }
     
 }
-
 
 //funcion para analizar la palabra al presionar enter
 function enter(event){
@@ -62,6 +63,7 @@ function imprimir(tabla,tipo){//metodo para llenar las listas de las palabras an
 //ahora si se viene lo chido :v
 
 function comprobarTipo(texto){//nos devuelve un string indicando el tipo de token
+    
     //comparamos que la primera posicion de la palabra sea una letra mayuscula o minuscula
     if((textoEntrada.value.charCodeAt(0)>=97 && textoEntrada.value.charCodeAt(0)<=122) 
     || (textoEntrada.value.charCodeAt(0)>=65 && textoEntrada.value.charCodeAt(0)<=90)){
@@ -96,7 +98,5 @@ function comprobarTipo(texto){//nos devuelve un string indicando el tipo de toke
     }else{
         return("error");
     }
-
- 
    
 }
